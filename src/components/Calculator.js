@@ -2,21 +2,27 @@ import React from 'react';
 import Function from './Function';
 import Display from './Display';
 import './Calculator.css';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = { answer: '0' };
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
-  clickHandler = () => {
+  clickHandler = (e) => {
+    this.setState((prevState) => calculate(prevState, e.target.value));
   };
 
   render = () => {
-    const { answer } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div id="calculator">
-        <Display id="display" value={answer} />
+        <Display id="display" data={{ total, next, operation }} />
         <div id="buttons">
           <div id="digits-and-functions">
             <Function
