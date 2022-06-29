@@ -1,10 +1,9 @@
 import './App.css';
+import React from 'react';
 import Calculator from './components/Calculator';
 
-function App() {
-  return (
+export default class App extends React.PureComponent {
+  render = () => (
     <Calculator />
   );
 }
-
-export default App;
