@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+#display {
+  padding: 4px;
+  margin: 0;
+  background-color: #858694;
+  aspect-ratio: 12/2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#calculator {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+#buttons {
+  display: flex;
+  width: 100%;
+}
+
+button {
+  width: calc(100% / 3);
+  aspect-ratio: 3/2;
+  background-color: #e0e0e0;
+  border: 1px solid #d1d1d1;
+}
+
+#digits-and-functions {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+#arithmatic-functions {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+#neumeric-functions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#arithmatic-functions > button {
+  width: 100%;
+  background-color: #f5913e;
+}
+
+#neumeric-functions > button:nth-child(10) {
+  flex-grow: 2;
+  aspect-ratio: 6/2;
+}
