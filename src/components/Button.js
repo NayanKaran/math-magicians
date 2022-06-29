@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 export default class Button extends React.PureComponent {
   render = () => {
-    const { buttonProp: { clickHandler, value } } = this.props;
+    const { buttonProp: { onClick, value } } = this.props;
     return (
-      <button type="button" onClick={clickHandler} value={value}>
+      <button type="button" onClick={onClick} value={value}>
         {value}
       </button>
     );
@@ -14,7 +14,7 @@ export default class Button extends React.PureComponent {
 
 Button.propTypes = {
   buttonProp: PropTypes.shape({
-    clickHandler: PropTypes.func,
+    onClick: PropTypes.func,
     value: PropTypes.string,
   }),
 };

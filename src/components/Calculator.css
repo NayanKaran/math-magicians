@@ -28,6 +28,11 @@ button {
   aspect-ratio: 3/2;
   background-color: #e0e0e0;
   border: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d1d1d1;
 }
 
 #digits-and-functions {
@@ -51,6 +56,10 @@ button {
 #arithmatic-functions > button {
   width: 100%;
   background-color: #f5913e;
+}
+
+#arithmatic-functions > button:hover {
+  background-color: #ff7300;
 }
 
 #neumeric-functions > button:nth-child(10) {
