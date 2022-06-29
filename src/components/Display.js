@@ -3,29 +3,27 @@ import PropTypes from 'prop-types';
 
 function getInnerText(data) {
   const { total, operation, next } = data;
-  if (total === null && operation === null && next !== null) {
+  if (!total && !operation && next) {
     return next;
   }
-  if (total !== null && operation === null && next === null) {
+  if (total && !operation && !next) {
     return total;
   }
-  if (total !== null && operation !== null && next === null) {
+  if (total && operation && !next) {
     return `${total} ${operation}`;
   }
-  if (total !== null && operation !== null && next !== null) {
+  if (total && operation && next) {
     return `${total} ${operation} ${next}`;
   }
   return '0';
 }
 
-export default class Display extends React.PureComponent {
-  render = () => {
-    const { data, id } = this.props;
-    return (
-      <p id={id}>{getInnerText(data)}</p>
-    );
-  };
-}
+const Display = (props) => {
+  const { data, id } = props;
+  return <p id={id}>{getInnerText(data)}</p>;
+};
+
+export default Display;
 
 Display.propTypes = {
   data: PropTypes.shape({
