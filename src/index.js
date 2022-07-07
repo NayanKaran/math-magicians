@@ -13,7 +13,7 @@ import CalculatorPage from './pages/CalculatorPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Routes>
         <Route path="/calculator" element={<CalculatorPage />} />
         <Route path="/quote" element={<Quote />} />
