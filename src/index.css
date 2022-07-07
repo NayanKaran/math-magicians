@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  max-width: 1024px;
+  margin: auto;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +25,52 @@ code {
     Consolas,
     "Courier New",
     monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+}
+
+#root {
+  margin: 8px 64px;
+}
+
+p {
+  font-size: xx-large;
+  margin: 0;
+}
+
+#root > header > nav > a {
+  font-size: xx-large;
+  padding: 0 16px;
+  line-height: 34px;
+  height: 44px;
+  border-left: 2px solid black;
+}
+
+#root > header > nav > a:nth-child(1) {
+  border-left: none;
+}
+
+#root > main {
+  margin: 64px 0;
+}
+
+main > p {
+  margin-bottom: 32px;
+  font-size: x-large;
+}
+
+#root > main > p:nth-child(1) {
+  font-size: xx-large;
+}
+
+#calculator-main {
+  display: flex;
 }
