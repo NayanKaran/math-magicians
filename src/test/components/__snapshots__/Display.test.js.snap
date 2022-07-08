@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Display component Testing with snapshot 1`] = `
+<p
+  id={null}
+>
+  0
+</p>
+`;
