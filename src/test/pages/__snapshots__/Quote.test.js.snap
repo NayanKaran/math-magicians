@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Quote component Testing with snapshot 1`] = `
+<main>
+  <p>
+    Mathematics is not about numbers, equations, computations or algorithms; it's about understanding. - William Paul Thurston
+  </p>
+</main>
+`;
