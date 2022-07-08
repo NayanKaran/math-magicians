@@ -8,7 +8,9 @@ An online calculator.
 
 ## Live Demo
 
-[https://nayankaran.github.io/math-magicians/](https://nayankaran.github.io/math-magicians/)
+[https://math-magicians-nayankaran.netlify.app/](https://math-magicians-nayankaran.netlify.app/)
+
+[https://math-magicians-nayankaran.herokuapp.com/](https://math-magicians-nayankaran.herokuapp.com/)
 
 ## Getting Started
 
